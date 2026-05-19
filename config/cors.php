@@ -1,3 +1,19 @@
-'allowed_origins' => ['https://ktstore.space', 'https://www.ktstore.space'],
-'allowed_methods' => ['*'],
-'allowed_headers' => ['*'],
+<?php
+
+return [
+    'paths' => ['api/*', 'sanctum/csrf-cookie'],
+
+    'allowed_methods' => ['*'],
+
+    'allowed_origins' => ['https://ktstore.space', 'https://www.ktstore.space'],
+
+    'allowed_origins_patterns' => [],
+
+    'allowed_headers' => ['*'],
+
+    'exposed_headers' => [],
+
+    'max_age' => 0,
+
+    'supports_credentials' => false,
+];
